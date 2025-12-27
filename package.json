@@ -34,7 +34,7 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "prepare": "husky",
-    "restcountries:fetch": "curl https://restcountries.com/v3.1/all | jq 'INDEX(.cca2)' > data/preval/json/restcountries.json",
+    "restcountries:fetch": "curl https://restcountries.com/v3.1/all?fields=cca2,area,flag,landlocked,population | jq 'INDEX(.cca2) | del(.[].cca2)' > data/preval/json/restcountries.json",
     "start": "next start",
     "type:check": "tsc"
   },
