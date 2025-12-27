@@ -26,7 +26,7 @@ export enum Value {
 }
 
 export default function useChart(
-  containerRef: RefObject<HTMLElement>,
+  containerRef: RefObject<HTMLElement | null>,
   onChartReady: (
     this: unknown,
     event: { type: 'frameended'; target: Root },
@@ -54,7 +54,7 @@ export default function useChart(
   const gray200 = useColorModeToken('colors', 'gray.200', 'gray.600') as string
   const gray300 = useColorModeToken('colors', 'gray.300', 'gray.500') as string
   const blue500 = useColorModeToken('colors', 'blue.500', 'blue.200') as string
-  const chartRef = useRef<ChartRef>()
+  const chartRef = useRef<ChartRef>(undefined)
 
   useEffect(() => {
     if (loadingVisits || loadingWishes) return

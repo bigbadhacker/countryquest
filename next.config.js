@@ -6,9 +6,6 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
  * @type {import('next').NextConfig}
  **/
 module.exports = withBundleAnalyzer({
-  eslint: {
-    dirs: ['atoms', 'components', 'data', 'hooks', 'lib', 'pages'],
-  },
   generateBuildId: () => 'build',
   output: 'export',
 })
