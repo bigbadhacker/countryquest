@@ -13,6 +13,7 @@
 - 📈 [amCharts](https://www.amcharts.com/) for map charts
 - 🌎 [REST Countries](https://restcountries.com/) for country data
 - 🤖 [TypeScript](https://www.typescriptlang.org/) for type-checking
+- ⚠️ [ESLint](https://eslint.org/) for linting
 - 💄 [Prettier](https://prettier.io/) for formatting
 - 🐶 [Husky](https://typicode.github.io/husky) and [lint-staged](https://github.com/okonet/lint-staged) for commit hooks
 - 🎬 [Framer Motion](https://www.framer.com/motion/) for animations
