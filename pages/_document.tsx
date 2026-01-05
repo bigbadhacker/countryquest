@@ -1,5 +1,6 @@
 import { ColorModeScript } from '@chakra-ui/react'
 import NextDocument, { Head, Html, Main, NextScript } from 'next/document'
+import ServiceWorkerScript from '../components/service-worker-script'
 import theme from '../theme'
 
 export default class Document extends NextDocument {
@@ -11,6 +12,7 @@ export default class Document extends NextDocument {
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
           <Main />
           <NextScript />
+          <ServiceWorkerScript />
         </body>
       </Html>
     )
