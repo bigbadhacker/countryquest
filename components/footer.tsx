@@ -2,7 +2,7 @@ import { Flex, Link, Text, useColorModeValue } from '@chakra-ui/react'
 import pkg from '../package.json'
 
 export default function Footer() {
-  const linkColor = useColorModeValue('blue.500', 'blue.200')
+  const linkColor = useColorModeValue('purple.500', 'purple.200')
 
   return (
     <Flex fontSize="sm" gap={4} justifyContent="center" padding={8} wrap="wrap">

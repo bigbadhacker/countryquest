@@ -21,7 +21,7 @@ export type ChartRef = {
 
 export enum Value {
   None = 0,
-  Wish = 0.2,
+  Wish = 0.25,
   Visit = 1,
 }
 
@@ -53,7 +53,11 @@ export default function useChart(
   const gray100 = useColorModeToken('colors', 'gray.100', 'gray.700') as string
   const gray200 = useColorModeToken('colors', 'gray.200', 'gray.600') as string
   const gray300 = useColorModeToken('colors', 'gray.300', 'gray.500') as string
-  const blue500 = useColorModeToken('colors', 'blue.500', 'blue.200') as string
+  const purple500 = useColorModeToken(
+    'colors',
+    'purple.500',
+    'purple.200',
+  ) as string
   const chartRef = useRef<ChartRef>(undefined)
 
   useEffect(() => {
@@ -85,7 +89,7 @@ export default function useChart(
         const icon = button.get('icon')!
         const background = button.get('background')!
 
-        icon.setAll({ stroke: color(blue500) })
+        icon.setAll({ stroke: color(purple500) })
         background.setAll({ fill: color(white), stroke: color(gray100) })
         background.states.create('hover', {}).setAll({ fill: color(gray200) })
         background.states.create('down', {}).setAll({ fill: color(gray300) })
@@ -113,7 +117,7 @@ export default function useChart(
           target: series.mapPolygons.template,
           dataField: 'value',
           min: color(gray100),
-          max: color(blue500),
+          max: color(purple500),
           minValue: 0,
           maxValue: 1,
           key: 'fill',
@@ -166,7 +170,7 @@ export default function useChart(
     gray100,
     gray200,
     gray300,
-    blue500,
+    purple500,
   ])
 
   useEffect(() => {

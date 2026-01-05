@@ -53,9 +53,7 @@ export default function SignIn() {
   return (
     <Popover initialFocusRef={emailFieldRef} placement="bottom-end">
       <PopoverTrigger>
-        <Button colorScheme="blue" variant="outline">
-          Sign in
-        </Button>
+        <Button variant="outline">Sign in</Button>
       </PopoverTrigger>
       <PopoverContent as="form" onSubmit={onFormSubmit}>
         <PopoverCloseButton />
@@ -91,7 +89,6 @@ export default function SignIn() {
         <PopoverFooter border={0} paddingBlockEnd={6}>
           <VStack spacing={2}>
             <Button
-              colorScheme="blue"
               disabled={loading}
               isLoading={loading}
               loadingText="Sending magic sign in link..."
