@@ -1,4 +1,4 @@
-import { Badge, Flex, Heading, useColorModeValue } from '@chakra-ui/react'
+import { Flex, Heading, useColorModeValue } from '@chakra-ui/react'
 import Account from '../components/account'
 import useIsClient from '../hooks/use-is-client'
 
@@ -20,14 +20,7 @@ export default function Header() {
           'linear(to-l, pink.400, purple.400)',
         )}
       >
-        Countryquest{' '}
-        <Badge
-          colorScheme={useColorModeValue('purple', 'pink')}
-          variant="solid"
-          verticalAlign="super"
-        >
-          beta
-        </Badge>
+        Countryquest
       </Heading>
       {isClient && <Account />}
     </Flex>
