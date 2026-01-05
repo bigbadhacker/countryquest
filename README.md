@@ -3,7 +3,12 @@
 [![Build status](https://img.shields.io/github/actions/workflow/status/rbardini/countryquest/main.yml)](https://github.com/rbardini/countryquest/actions)
 [![Deploy status](https://img.shields.io/netlify/12195d0a-3b08-456a-b49d-ed2f2465018d?label=deploy)](https://app.netlify.com/sites/countryquest/deploys)
 
-🗺️ An interactive scratch off map. Keep track of which places you have been, how much of the world you have conquered, and where to go next.
+🗺️ An interactive scratch-off map. Keep track of which places you have been, how much of the world you have conquered, and where to go next.
+
+<picture>
+  <source media="(prefers-color-scheme:dark)" srcset="public/screenshots/wide-dark.png">
+  <img alt="Screenshot" src="public/screenshots/wide-light.png">
+</picture>
 
 ## Technologies
 

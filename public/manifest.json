@@ -1,0 +1,49 @@
+{
+  "name": "Countryquest",
+  "description": "An interactive scratch-off map. Keep track of which places you have been, how much of the world you have conquered, and where to go next.",
+  "categories": ["travel", "lifestyle", "productivity"],
+  "scope": "/",
+  "id": "/?source=pwa",
+  "start_url": "/?source=pwa",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#805ad5",
+  "background_color": "#805ad5",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshots/narrow-light.png",
+      "sizes": "880x1912",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Home screen on mobile"
+    },
+    {
+      "src": "screenshots/narrow-dark.png",
+      "sizes": "880x1912",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Home screen on mobile (dark mode)"
+    },
+    {
+      "src": "screenshots/wide-light.png",
+      "sizes": "3840x3412",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Home screen on desktop"
+    },
+    {
+      "src": "screenshots/wide-dark.png",
+      "sizes": "3840x3412",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Home screen on desktop (dark mode)"
+    }
+  ]
+}

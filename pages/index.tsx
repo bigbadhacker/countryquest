@@ -11,12 +11,10 @@ export default function Home() {
         <title>Countryquest</title>
         <meta
           name="description"
-          content="Countryquest is an interactive scratch off map. Keep track of which places you have been, how much of the world you have conquered, and where to go next."
+          content="An interactive scratch-off map. Keep track of which places you have been, how much of the world you have conquered, and where to go next."
         />
-        <link
-          rel="icon"
-          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🗺️</text></svg>"
-        ></link>
+        <link rel="icon" href="/favicon.svg" />
+        <link rel="manifest" href="/manifest.json" />
       </Head>
       <Header />
       <Divider />
